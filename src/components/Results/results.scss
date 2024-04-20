@@ -1,0 +1,129 @@
+.results {
+  background: url(../../assets/img/desktop/background/results.jpg) 0 0 / cover
+    no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
+  &__body {
+    text-align: center;
+    color: #fff;
+    opacity: 0.8;
+    margin: 40px auto 60px auto;
+    width: 75%;
+  }
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__list {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 170px;
+    height: 110px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  &__item::after,
+  &__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+  }
+  &__item::after {
+    bottom: 0;
+    left: 0;
+    border-bottom: #ff6565 solid 2px;
+    border-left: #ff6565 solid 2px;
+  }
+  &__item::before {
+    top: 0;
+    right: 0;
+    border-top: #ff6565 solid 2px;
+    border-right: #ff6565 solid 2px;
+  }
+  &__item-title {
+    font-size: 46px;
+    font-weight: 700;
+    transform: translateY(50%);
+  }
+  &__item-text {
+    font-size: 12px;
+    font-weight: 300;
+    transform: translateY(25px);
+  }
+}
+@media (max-width: 1100px) {
+  .results {
+    &__list {
+      width: 70%;
+      gap: 80px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .results {
+    background: url(../../assets/img/tablet/background/results.jpg) 0 0 / cover
+      no-repeat;
+    padding: 40px 0;
+    &__body {
+      margin: 40px auto 130px auto;
+      width: 90%;
+    }
+    &__title {
+      margin-bottom: 80px;
+    }
+    &__list {
+      width: 75%;
+    }
+  }
+}
+@media (max-width: 615px) {
+  .results {
+    &__item {
+      width: 130px;
+      height: 100px;
+      text-align: center;
+    }
+    &__item-title {
+      font-size: 35px;
+    }
+  }
+}
+@media (max-width: 530px) {
+  .results {
+    background: url(../../assets/img/mobile/background/results.jpg) 0 0 / cover
+      no-repeat;
+    &__body {
+      margin: 0px auto 40px auto;
+    }
+    &__text {
+      text-align: justify;
+    }
+    &__list {
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
+    &__item {
+      width: 220px;
+      height: 110px;
+    }
+    &__item-title {
+      font-size: 46px;
+    }
+  }
+}

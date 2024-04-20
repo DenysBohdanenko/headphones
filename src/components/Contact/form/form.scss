@@ -1,0 +1,44 @@
+.form {
+  min-width: 320px;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  & input,
+  & textarea {
+    display: block;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 28px;
+  }
+  & label {
+    opacity: 0.75;
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    transition: 0.3s;
+  }
+  & input:focus + label,
+  & textarea:focus + label,
+  label.active {
+    transform: scale(0.9) translate(-5%, -170%);
+  }
+  & fieldset {
+    position: relative;
+  }
+  &__message {
+    padding: 5px 0;
+  }
+  &__button {
+    margin: 60px auto 0 auto;
+  }
+  &__input-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,44 @@
+.burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    margin-top: 5px;
+    & span {
+      position: absolute;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      transition: 0.4s;
+      background-color: #fff;
+    }
+    & span:first-child {
+      top: 0;
+    }
+    & span:nth-child(2) {
+      top: 50%;
+      transform: scale(1) translateY(-50%);
+    }
+    & span:last-child {
+      bottom: 0;
+    }
+  }
+  .burger.active span:nth-child(2) {
+    transform: scale(0) translateX(-50%);
+  }
+  .burger.active span:first-child {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .burger.active span:last-child {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+}
