@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/headphones/static/css/main.1da99e98.css",
+    "main.js": "/headphones/static/js/main.fb783682.js",
+    "static/media/home.jpg": "/headphones/static/media/home.b7f7461897aef99d8fd6.jpg",
+    "static/media/results.jpg": "/headphones/static/media/results.1225e721591c36bb8738.jpg",
+    "static/media/about-item-4.svg": "/headphones/static/media/about-item-4.3228c5acf035f32442848284c597dc3a.svg",
+    "static/media/logo.svg": "/headphones/static/media/logo.6b4470e9b01539806176917b401d9ded.svg",
+    "static/media/about-item-2.svg": "/headphones/static/media/about-item-2.493575a6d486062776238335fc80997e.svg",
+    "static/media/about-item-1.svg": "/headphones/static/media/about-item-1.98fe11c1ef4182dc2786ad25b04623c2.svg",
+    "static/media/about-item-3.svg": "/headphones/static/media/about-item-3.be6d985f36bf0dc702a23a4482ff64c4.svg",
+    "index.html": "/headphones/index.html",
+    "main.1da99e98.css.map": "/headphones/static/css/main.1da99e98.css.map",
+    "main.fb783682.js.map": "/headphones/static/js/main.fb783682.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1da99e98.css",
+    "static/js/main.fb783682.js"
+  ]
+}
